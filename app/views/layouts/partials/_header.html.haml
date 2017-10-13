@@ -1,0 +1,28 @@
+/ Fixed navbar
+.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to site_url, class: "navbar-brand" do
+        AHMED NADAR
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li{class: active_class('/')}
+          = link_to 'HOME', root_path
+        %li{class: active_class('/about')}
+          = link_to 'ABOUT', about_path
+        %li{class: active_class('/services')}
+          = link_to 'SERVICES', services_path
+        %li{class: active_class('/projects')}
+          = link_to 'PROJECTS', projects_path
+
+        -# %li{class: active_class('/articles')}
+        -#   = link_to 'ARTICLES', articles_path
+        %li{class: active_class('')}
+          = link_to "#myModal", "data-target" => "#myModal", "data-toggle" => "modal" do
+            %i.fa.fa-envelope-o
+        = render 'devise/menu/registration_items'
+    / /.nav-collapse

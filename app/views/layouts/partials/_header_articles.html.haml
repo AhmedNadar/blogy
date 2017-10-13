@@ -1,0 +1,31 @@
+%nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+  .container
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header.page-scroll
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        Menu
+        %i.fa.fa-bars
+      = link_to site_url, class: "navbar-brand" do
+        AHMED NADAR
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li{class: active_class('/')}
+          = link_to 'HOME', root_path
+        %li{class: active_class('/about')}
+          = link_to 'ABOUT', about_path
+        %li{class: active_class('/services')}
+          = link_to 'SERVICES', services_path
+        %li{class: active_class('/projects')}
+          = link_to 'PROJECTS', projects_path
+
+        -# %li{class: active_class('/articles')}
+        -#   = link_to 'ARTICLES', articles_path
+        %li{class: active_class('')}
+          = link_to "#myModal", "data-target" => "#myModal", "data-toggle" => "modal" do
+            %i.fa.fa-envelope-o
+    / /.navbar-collapse
+  / /.container
+
+

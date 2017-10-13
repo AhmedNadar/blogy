@@ -1,0 +1,26 @@
+// libraries
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'normalize-rails/normalize';
+
+$nprogress-color: #5889A7;
+$nprogress-height: 3px;
+$nprogress-zindex: 10100;
+@import "nprogress";
+@import "nprogress-bootstrap";
+@import "nprogress-turbolinks5";
+
+
+// core
+@import "core/variables";
+@import "core/fonts";
+
+// local styles
+@import "main";
+@import "pages";
+@import "markdown/articles";
+@import "markdown/solarized";
+

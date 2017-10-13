@@ -1,0 +1,12 @@
+!!!
+%html
+  = render 'layouts/partials/head'
+  %body
+    = render 'layouts/partials/header'
+    - flash.each do |name, msg|
+      = content_tag(:div, msg, class: "alert alert-info")
+    = yield
+    = render 'layouts/partials/footer'
+    = render 'layouts/partials/contact_modal'
+    -# Place JavaScript at the end of the document so the pages load faster
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
