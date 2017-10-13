@@ -1,0 +1,32 @@
+%article.about
+  = content_for :page_title, 'Plans'
+  #blue
+    .container
+      .row.centered
+        .col-lg-8.col-lg-offset-2
+          %h4 COUSULTANT PLANS
+      / row
+  .container
+    .row.centered
+      - @plans.each do |plan|
+        .col-lg-4
+          = image_tag asset_path('ahmed_profile.png'), class: "img-circle", alt: "Ahmed Nadar", height: "200", width: "200"
+          = link_to new_registration_path(plan_id: plan.id), class: "ruby" do
+            .plan-name
+              = plan.name
+            %button.btn{:style => "color: white;background: rgb(242, 118, 73);"}
+              Register ($#{plan.price})
+            .plan-arrow
+          %br/
+          %br/
+
+  / container
+/ bluewrap
+
+
+-# = render 'pages/partials/about_team'
+-# = render 'pages/partials/skills'
+-# = render 'pages/partials/e_story'
+
+
+
