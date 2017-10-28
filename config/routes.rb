@@ -7,7 +7,8 @@ Rails.application.routes.draw do
                                                     :sign_out => 'logout',
                                                     :sign_up => 'ahlan_tars'}
   resources :articles
-  resources :plans
+  resources :subscriptions
+  resources :registrations
 
   # https://github.com/thoughtbot/high_voltage#override
   get "/pages/*id" => 'pages#show', as: :page, format: false
@@ -18,5 +19,6 @@ Rails.application.routes.draw do
   get 'services'  => 'pages#services'
   get 'projects'  => 'pages#projects'
   get 'clients'  => 'pages#clients'
-  get 'plans'  => 'pages#plans'
+
+  post "registrations/hook"
 end

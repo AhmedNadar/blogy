@@ -1,0 +1,38 @@
+%article.about
+  = content_for :page_title, 'Subscription Confirmation'
+  #green
+    .container
+      .row.centered
+        .col-lg-8.col-lg-offset-2
+          %h4 Payment Complete
+      / row
+  .container
+    .row.plans
+      .col-lg-6.col-lg-offset-3
+        .well
+          .centered
+            %h1.no-bottom-margin
+              %i.fa.fa-check-circle
+            %h2 Thank you, #{@registration.full_name}!
+            %p
+              Your payment has been successful and your monthly plan is now confirmed.
+          %br/
+          %table.table
+            %tbody
+              %tr
+                %td.float-right Your Plan:
+                %td #{@registration.subscription.name}
+              %tr
+                %td.float-right Your Email:
+                %td #{@registration.email}
+              %tr
+                %td.float-right Plan Fees:
+                %td $#{@registration.subscription.price} /month
+              %tr
+                %td.float-right Purchase Date:
+                %td=@registration.subscription.created_at.strftime("%B %d, %Y")
+          .row.centered
+            = link_to 'View Subscription', subscriptions_path, class: 'btn btn-primary'
+
+    -# = link_to 'Edit', edit_registration_path(@registration), class: 'btn btn-primary'
+

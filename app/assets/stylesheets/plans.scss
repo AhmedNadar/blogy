@@ -1,3 +1,262 @@
 // Place all the styles related to the plans controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.plans{
+  padding: 80px 0;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);}
+
+.card-pricing{
+  text-align: center;}
+
+.card-plain{
+  background: transparent;
+  box-shadow: none;}
+
+.card-plain .card-content{
+  padding-left: 5px;
+  padding-right: 5px;}
+
+.card-pricing .card-content{
+  padding: 15px !important;}
+
+.card-pricing .card-title{
+  margin-top: 30px;}
+
+.title, .title a, .card-title, .card-title a, .info-title, .info-title a, .footer-brand, .footer-brand a, .footer-big h5, .footer-big h5 a, .footer-big h4, .footer-big h4 a, .media .media-heading, .media .media-heading a{
+  color: #3C4858;
+  text-decoration: none;}
+
+.title, .card-title, .info-title, .footer-brand, .footer-big h5, .footer-big h4, .media .media-heading{
+  font-weight: 700;}
+
+.text-info{
+  color: #00bcd4;
+  font-weight: 700;}
+
+h6, .h6{
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 500;}
+
+
+// ul
+.card-pricing ul{
+  list-style: none;
+  padding: 0;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+.card-pricing ul li {
+  color: #999999;
+  text-align: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.card-pricing ul li b {
+  color: #3C4858;
+}
+
+b, strong {
+  font-weight: 700
+}
+
+.btn.btn-rose, .btn.btn-rose:hover, .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose.active, .btn.btn-rose:active:focus, .btn.btn-rose:active:hover, .btn.btn-rose.active:focus, .btn.btn-rose.active:hover, .open > .btn.btn-rose.dropdown-toggle, .open > .btn.btn-rose.dropdown-toggle:focus, .open > .btn.btn-rose.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-rose, .navbar .navbar-nav > li > a.btn.btn-rose:hover, .navbar .navbar-nav > li > a.btn.btn-rose:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active, .navbar .navbar-nav > li > a.btn.btn-rose.active, .navbar .navbar-nav > li > a.btn.btn-rose:active:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active:hover, .navbar .navbar-nav > li > a.btn.btn-rose.active:focus, .navbar .navbar-nav > li > a.btn.btn-rose.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:hover {
+  background-color: #e91e63;
+  color: #FFFFFF;
+}
+
+.btn.btn-rose, .navbar .navbar-nav > li > a.btn.btn-rose {
+  box-shadow: 0 2px 2px 0 rgba(233, 30, 99, 0.14), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
+}
+
+.card-raised {
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .header-rose, .card .content-rose {
+  background: linear-gradient(60deg, #BA68C8, #7E57C2);
+}
+
+.card [class*="header-"], .card [class*="content-"] {
+  color: #FFFFFF;
+}
+
+.card-pricing.card-background [class*="text-"], .card-pricing [class*="content-"] [class*="text-"] {
+ color: #FFFFFF;
+}
+
+.card [class*="header-"] .card-title a, .card [class*="header-"] .card-title, .card [class*="header-"] .icon i, .card [class*="content-"] .card-title a, .card [class*="content-"] .card-title, .card [class*="content-"] .icon i {
+ color: #FFFFFF;
+}
+
+.card [class*="content-"] h1 small, .card [class*="content-"] h2 small, .card [class*="content-"] h3 small {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-pricing.card-background ul li, .card-pricing [class*="content-"] ul li {
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.card-pricing.card-background ul li b, .card-pricing [class*="content-"] ul li b {
+  color: #FFFFFF;
+}
+
+.card [class*="content-"]{
+  border-radius: 6px;
+}
+
+.card-pricing h1 small:first-child {
+  position: relative;
+  top: -17px;
+  font-size: 26px;
+}
+
+h1, .h1 {
+  font-size: 3.8em;
+  line-height: 1.15em;
+}
+
+.btn.btn-round, .navbar .navbar-nav > li > a.btn.btn-round {
+  border-radius: 6px;
+}
+
+.btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover, .navbar .navbar-nav > li > a.btn.btn-white, .navbar .navbar-nav > li > a.btn.btn-white:focus, .navbar .navbar-nav > li > a.btn.btn-white:hover {
+  background-color: #FFFFFF;
+  color: #5b5b65;
+  font-weight: 100;
+  font-size: 0.9em;
+}
+
+.btn:focus, .btn:active, .btn:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default:hover, .navbar .navbar-nav > li > a.btn:focus, .navbar .navbar-nav > li > a.btn:active, .navbar .navbar-nav > li > a.btn:hover, .navbar .navbar-nav > li > a.btn.btn-default:focus, .navbar .navbar-nav > li > a.btn.btn-default:active, .navbar .navbar-nav > li > a.btn.btn-default:hover{
+  box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+}
+.btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose:hover, .navbar .navbar-nav > li > a.btn.btn-rose:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active, .navbar .navbar-nav > li > a.btn.btn-rose:hover {
+  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
+}
+
+
+.btn, .navbar .navbar-nav > li > a.btn {
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  padding: 12px 30px;
+  margin: 10px 1px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  will-change: box-shadow, transform;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.no-top-padding { padding-top: 0; }
+.no-bottom-padding { padding-bottom: 0; }
+.no-top-margin { margin-top: 0; }
+.no-bottom-margin { margin-bottom: 0; }
+
+.plans .fa-check-circle{
+  font-size: 2em;
+  color: #6fa234;}
+
+.plans .table > tbody > tr > td.float-right {
+  float: right;
+  font-weight: normal;
+}
+
+.plans .table > tbody > tr > td {
+  border:none;
+  font-weight: bold;
+}
+.plans .table {
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  border-collapse: inherit;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.plans {
+  .panel-default {
+    // background-color: #e9effb;
+    // box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+    background-color: #e9effb;
+    border-radius: 6px;
+    background-color: #f5f5f7;
+    box-shadow: 0 12px 30px 0 rgba(0,0,0,.5), inset 0 1px 0 0 hsla(0,0%,100%,.65);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .panel-body {
+    padding: 20px;
+  }
+  .form-control{
+    height: 44px;
+    // border: none;
+    box-shadow: inset 0px 0 0px rgba(0, 0, 0, 0.075);
+    &:focus {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+  }
+
+  button {
+    visibility: visible;
+    width: 100%;
+    min-height: 50px;
+    // background-image: none !important;
+    // background-color: #2cd1ba;
+    transition: color 0.3s ease-in;
+    span {
+      background-image: none;
+      background: transparent;
+      box-shadow: none;
+    }
+    &:hover {
+      background-color: rgba(44, 209, 186, 0.67);
+    }
+  }
+  .panel-default > .panel-heading {
+    background-color: #e8e9eb;
+    border-color: transparent;
+    min-height: 50px;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #5b5b65;
+    text-shadow: 0 1px 0 #fff;
+  }
+}
+
+.border-wrapper {
+    width: 100%;
+    position: relative;
+    background-color: #e8e9eb;
+  .border-edge {
+      border-top: 1px solid #fff;
+      box-shadow: 0 -1px 0 0 #d2d2d3;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%;
+      height: 4px;
+      background-color: #f5f5f7;
+      margin-bottom: -3px;
+  }
+}

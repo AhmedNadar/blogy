@@ -1,0 +1,38 @@
+%article.about
+  = content_for :page_title, 'Consultant Plans'
+  #blue
+    .container
+      .row.centered
+        .col-lg-8.col-lg-offset-2
+          %h4 Consultant Plans
+      / row
+  .container
+    .row.plans
+      .col-md-6.col-md-offset-3
+        .panel.panel-default
+          .panel-heading
+            %h3.panel-title
+              %b Fill in your information
+          .border-wrapper
+            .border-edge
+          .panel-body
+            = simple_form_for @registration, class: "form-inline" do |f|
+              - if @registration.errors.any?
+                #error_explanation
+                  %h2
+                    = pluralize(@registration.errors.count, "error")
+                    prohibited this registration from being saved:
+                  %ul
+                    - @registration.errors.full_messages.each do |message|
+                      %li= message
+              = f.hidden_field :subscription_id, value: @registration.subscription.id
+              %br/
+              = f.input :full_name, placeholder: "Full name", required: true, autofocus: true, label: false, input_html: { class: 'form-control' }
+              = f.input :company, placeholder: "Company name", class: "form-control", label: false, input_html: { class: 'form-group' }
+              = f.input :telephone, placeholder: "Phone number", class: "form-control", as: :string, label: false, input_html: { class: 'form-group' }
+              .actions
+                %script.stripe-button{ src: "https://checkout.stripe.com/checkout.js", data: {amount: @registration.subscription.price*100, description: @registration.subscription.name, key: Rails.configuration.stripe[:publishable_key]}}
+
+-# <div class="form-group">
+-#   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+-# </div>

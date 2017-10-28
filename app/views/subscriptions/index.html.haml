@@ -1,0 +1,90 @@
+%article.about
+  = content_for :page_title, 'Packages and Subscriptions'
+  #blue
+    .container
+      .row.centered
+        .col-lg-8.col-lg-offset-2
+          %h4 Monthly Web Development Consultation
+          -# %h4 Let an expert create your online presence
+          -# %p Our affordable website design packages give you everything you need for an effective online presence.
+
+      / row
+  .container.centered
+    .row.centered.plans
+      - @subscriptions.each do |subscription|
+        .col-md-6.col-md-offset-3
+          .card.card-pricing.card-raised
+            .card-content.content-rose
+              %h3.category.text-info #{ subscription.name}
+              %h1.card-title
+                %small> $
+                =subscription.price
+                %small> /month
+              =subscription.details.html_safe
+              = link_to new_registration_path(subscription_id: subscription.id) do
+                %button.btn.a.btn.btn-white.btn-raised.btn-round
+                  Subscribe for ($#{subscription.price}) /month
+    / container
+  / bluewrap
+
+  -# /////////////////////////////////////////////////////////////////////////////////
+  -# #blue
+  -#   .container
+  -#     .row.centered
+  -#       .col-lg-8.col-lg-offset-2
+  -#         %h2 Web Design monthly subscriptions
+  -#         %h4 Affordable professional built websites designed to grow your business
+  -#         %p We design, host, setup, maintain, provide maintenance & support for your website.
+  -#     / row
+
+
+  .container
+    .row.plans.no-top-padding
+      %hr/
+      %h4 Notes...
+      %small
+        -# %strong &sup1;
+        -# By siging up for one year plan or package you'll receive one (1) professional Gmail and G Suite account, free for the first year. Additional users on your G Suite account will be billed at the standard rate. After the first year your Gmail and G Suite account will renew at the standard annual or monthly rate, depending on which billing plan you choose. Offer is only valid for new G Suite accounts set up through Squarespace. Domains that have previously had or currently have a G Suite account cannot be used to redeem the offer. Offer must be redeemed within one year from purchase of the eligible plan.
+
+        -# %br/
+        -# %strong &sup2;
+        -# Package includes a one-time Google AdWords credit of $100, after spending the first $25. Offer only valid in US and Canada.
+        -# %br/
+        -# %br/
+
+        %strong &raquo;
+        After the 1st year agrement any additional services could be done for
+        %u $150 per month.
+        %br/
+
+        %strong &raquo;
+        Adding more feature such as Blogging system and Online store setups or maintenance is
+        %u $40/hour
+        %br/
+
+        -# %strong &raquo;
+        -# Our pricing does not include the cost of hosting and related partner services, such as Shopify or Squarespace, which must be paid for separately.
+        -# %br/
+
+        -# %strong &raquo;
+        -# If the service you are looking for is not included in the information above, we either charge by the hour for it or simply do not offer it. Our hourly rate is
+        -# %u$120
+        -# per hour, though we choose not to charge by the hour for most projects as it rarely benefits anybody.
+        -# %br/
+
+        -# %strong &raquo;
+        -# All prices are in
+        -# %u CAD$.
+        -# Our payment schedule is a simple 50% upfront and 50% upon completion for all projects. We do not invite bargaining and we never price gouge for clients with deeper pockets.
+        -# %br/
+
+        %strong &raquo;
+        If you have any questions, please feel free to contact me anytime via <a href='mailto:ahmednadar@gmail.com?subject=Web Development Consultation!&body=Hi Ahmed,'> my email</a>.
+
+
+-# = render 'pages/partials/about_team'
+-# = render 'pages/partials/skills'
+-# = render 'pages/partials/e_story'
+
+
+

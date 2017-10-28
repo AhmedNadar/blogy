@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171013153518) do
+ActiveRecord::Schema.define(version: 20171014225227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,12 +57,27 @@ ActiveRecord::Schema.define(version: 20171013153518) do
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
   end
 
-  create_table "plans", force: :cascade do |t|
+  create_table "registrations", force: :cascade do |t|
+    t.bigint "subscription_id", null: false
+    t.string "full_name"
+    t.string "company"
+    t.string "email"
+    t.string "telephone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "card_token"
+    t.date "end_date"
+    t.string "customer_id"
+    t.index ["subscription_id"], name: "index_registrations_on_subscription_id"
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
     t.string "name"
     t.text "details"
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "plan"
   end
 
 end
