@@ -1,3 +1,3 @@
-## My Portfolio Site
+## ahmednadar.com
 ------------------
-Web designa and development consultant.
+Web design and development consultant.
