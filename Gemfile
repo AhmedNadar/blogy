@@ -30,7 +30,7 @@ gem 'friendly_id',            '~> 5.2', '>= 5.2.3'
 gem 'simple_form',            '~> 3.5'
 gem 'figaro',                 '~> 1.1', '>= 1.1.1'
 gem 'will_paginate',          '~> 3.0.6'
-gem 'paperclip',              '~> 5.1'
+gem "paperclip",              "~> 5.0.0"
 gem 'aws-sdk',                '~> 3.0', '>= 3.0.1'
 gem 'stripe'
 
