@@ -8,6 +8,15 @@
   %meta{:charset => "utf-8"}
   %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
   %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
+  
+  / Global site tag (gtag.js) - Google Analytics
+  %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-114201921-1"}
+  :javascript
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114201921-1');
   = render 'layouts/partials/shims'
   = favicon_link_tag 'ahmedsite.ico', type: 'image/ico', sizes: '24x24'
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
