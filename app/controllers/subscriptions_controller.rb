@@ -4,4 +4,9 @@ class SubscriptionsController < ApplicationController
   def index
 
   end
+
+
+  def davisville
+
+  end
 end

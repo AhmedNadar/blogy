@@ -1,0 +1,34 @@
+%article.about
+  = content_for :page_title, 'Packages and Subscriptions for Davisville'
+  #blue
+    .container
+      .row.centered
+        .col-lg-8.col-lg-offset-2
+          %h4 Monthly Web Development Consultation for Davisville Law
+
+  .container.centered
+    .row.centered.plans
+      - @subscriptions.each do |subscription|
+        .col-md-6.col-md-offset-3
+          .card.card-pricing.card-raised
+            .card-content.content-rose
+              %h3.category.text-info #{ subscription.name}
+              %h1.card-title
+                %small> $
+                =subscription.price
+                %small> /month
+              =subscription.details.html_safe
+              = link_to new_registration_path(subscription_id: subscription.id) do
+                %button.btn.a.btn.btn-white.btn-raised.btn-round
+                  Subscribe for ($#{subscription.price}) /month
+  .container
+    .row.plans.no-top-padding
+      %hr/
+      %h4 Notes...
+      %small
+        %strong &raquo;
+        Adding more feature such as Blogging system and Online store setups or maintenance is
+        %u $40/hour
+        %br/
+        %strong &raquo;
+        If you have any questions, please feel free to contact me anytime via <a href='mailto:ahmednadar@gmail.com?subject=Web Development Consultation!&body=Hi Ahmed,'> my email</a>.

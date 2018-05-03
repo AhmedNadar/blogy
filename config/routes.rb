@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :articles
   resources :subscriptions
   resources :registrations
+  get 'davisville'     => 'subscriptions#davisville'
 
   # https://github.com/thoughtbot/high_voltage#override
   get "/pages/*id" => 'pages#show', as: :page, format: false

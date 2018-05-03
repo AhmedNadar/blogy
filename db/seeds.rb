@@ -65,19 +65,44 @@ Subscription.delete_all
 # Mailchimp newsletter campaigns, commerce product changes, monthly site checkups, and help with technical issues.<br/><br/>"
 
 
-Subscription.create name: "Tyna's Website upkeep", price: 95, plan: "2017_upkeep_web_design",
+# Subscription.create name: "Tyna's Website upkeep", price: 95, plan: "2017_upkeep_web_design",
+# details: "
+#  <ul>
+#   <li><b>1 year</b> agreement</li>
+#   <li>Mobile and tablet ready</li>
+#   <li>SEO best practices</li>
+#   <li>SSL Security Included</li>
+#   <li>Easy content management</li>
+#   <li>Social Media Integration</li>
+#   <li>Website analytics &amp; reports</li>
+#   <li>Ongoing support &amp; maintenance</li>
+#   <li><b>1 year</b> hosting subscription with Squarespace</li>
+# </ul>
+# <br/>
+# "
+
+Subscription.create name: "Davisville's Website upkeep", price: 120, plan: "2018_davisville_upkeep",
 details: "
  <ul>
-  <li><b>1 year</b> agreement</li>
-  <li>Mobile and tablet ready</li>
+ <li><b>IT consultation serivce includes:</b></li>
+  <li>Domain registration</li>
+  <li>Hosting setup and configuration</li>
+  <li>G-Suite subscription & email setup:</li>
+  <li><strong> &raquo;</strong><i>Business email through Gmail</i></li>
+  <li><strong> &raquo;</strong><i>Video and voice conferencing</i></li>
+  <li><strong> &raquo;</strong><i>Security and administration contrlis</i></li>
+  <li><strong> &raquo;</strong><i>Share documents, spreadsheets, and presentations</i></li>
+  <li><strong> &raquo;</strong><i>24/7 support by phone, email, and online</i></li>
+  <li><strong> &raquo;</strong><i>30GB cloud storage</i></li>
+  <li><strong> &raquo;</strong><i>Email is securely stored in Google’s cloud</i></li>
+  <li><strong> &raquo;</strong><i>Simple admin management, new users can be easily added</i></li>
+  <li>Design Mobile and tablet ready</li>
   <li>SEO best practices</li>
   <li>SSL Security Included</li>
   <li>Easy content management</li>
   <li>Social Media Integration</li>
   <li>Website analytics &amp; reports</li>
   <li>Ongoing support &amp; maintenance</li>
-  <li><b>1 year</b> hosting subscription with Squarespace</li>
 </ul>
 <br/>
 "
-
