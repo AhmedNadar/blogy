@@ -85,7 +85,7 @@ Subscription.create name: "Davisville's Website upkeep", price: 120, plan: "2018
 details: "
  <ul>
  <li><b>IT consultation serivce includes:</b></li>
-  <li>Domain registration</li>
+  <li>Domain registration & DNS configuration</li>
   <li>Hosting setup and configuration</li>
   <li>G-Suite subscription & email setup:</li>
   <li><strong> &raquo;</strong><i>Business email through Gmail</i></li>
@@ -99,9 +99,10 @@ details: "
   <li>Design Mobile and tablet ready</li>
   <li>SEO best practices</li>
   <li>SSL Security Included</li>
-  <li>Easy content management</li>
+  <li>Logo Design</li>
   <li>Social Media Integration</li>
   <li>Website analytics &amp; reports</li>
+  <li>Google analytics setup</li>
   <li>Ongoing support &amp; maintenance</li>
 </ul>
 <br/>
