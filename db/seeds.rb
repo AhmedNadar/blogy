@@ -81,7 +81,7 @@ Subscription.delete_all
 # <br/>
 # "
 
-Subscription.create name: "Davisville's Website upkeep", price: 120, plan: "2018_davisville_upkeep",
+Subscription.create name: "Davisville's Website upkeep", price: 90, plan: "2018_davisville_upkeep",
 details: "
  <ul>
  <li><b>IT consultation serivce includes:</b></li>
@@ -107,3 +107,5 @@ details: "
 </ul>
 <br/>
 "
+
+
