@@ -25,7 +25,7 @@ gem 'haml_lint',              require: false
 gem 'high_voltage',           '~> 3.0'
 gem 'pygments.rb',            '~> 1.2'
 gem 'redcarpet',              '~> 3.4'
-gem 'devise',                 '~> 4.3'
+gem 'devise',                 '~> 4.7'
 gem 'friendly_id',            '~> 5.2', '>= 5.2.3'
 gem 'simple_form',            '~> 3.5'
 gem 'figaro',                 '~> 1.1', '>= 1.1.1'
