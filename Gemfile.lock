@@ -619,14 +619,18 @@ GEM
     pry (0.11.1)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    pry (0.11.1-java)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+      spoon (~> 0.0)
     pry-byebug (3.5.0)
       byebug (~> 9.1)
       pry (~> 0.10)
     pry-rails (0.3.6)
       pry (>= 0.10.4)
     public_suffix (3.0.0)
-    puma (3.10.0)
-    puma (3.10.0-java)
+    puma (3.12.2)
+    puma (3.12.2-java)
     pygments.rb (1.2.0)
       multi_json (>= 1.0.0)
     rack (2.0.3)
@@ -699,6 +703,8 @@ GEM
     simple_form (3.5.0)
       actionpack (> 4, < 5.2)
       activemodel (> 4, < 5.2)
+    spoon (0.0.6)
+      ffi
     spring (2.0.2)
       activesupport (>= 4.2)
     sprockets (3.7.1)
@@ -776,7 +782,7 @@ DEPENDENCIES
   pry
   pry-byebug
   pry-rails
-  puma (~> 3.7)
+  puma (~> 3.12)
   pygments.rb (~> 1.2)
   rails (~> 5.1.4)
   redcarpet (~> 3.4)
