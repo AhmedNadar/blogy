@@ -24,7 +24,7 @@ gem 'haml-rails',             '~> 1.0'
 gem 'haml_lint',              require: false
 gem 'high_voltage',           '~> 3.0'
 gem 'pygments.rb',            '~> 1.2'
-gem 'redcarpet',              '~> 3.4'
+gem 'redcarpet',              '~> 3.5'
 gem 'devise',                 '~> 4.3'
 gem 'friendly_id',            '~> 5.2', '>= 5.2.3'
 gem 'simple_form',            '~> 3.5'
