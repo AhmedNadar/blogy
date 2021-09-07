@@ -42,7 +42,7 @@ end
 
 group :development do
   gem 'listen',               '~> 3.0'
-  gem 'better_errors',        '~> 2.3'
+  gem 'better_errors',        '~> 2.8'
   gem 'spring',               '~> 2.0', '>= 2.0.2'
   gem 'web-console',          '~> 3.5', '>= 3.5.1'
   gem 'awesome_print',        '~> 1.8'
